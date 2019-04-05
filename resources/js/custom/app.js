@@ -54,6 +54,7 @@
         }
         
         $scope.restartGame=function(){
+			$scope.movecount=0;
             $scope.level=0;
             $scope.changeLevel();
             $scope.gameStatus='GO';

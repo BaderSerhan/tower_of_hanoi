@@ -56,6 +56,7 @@
         }
         
         $scope.playNextLevel=function(){
+			$scope.movecount=0;
             $scope.changeLevel();
         }
         

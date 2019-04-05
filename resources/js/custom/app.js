@@ -45,6 +45,10 @@
             if($scope.gameStatus=='GO'){
                 if($scope.peg.A.every(checkEmpty) && $scope.peg.B.every(checkEmpty) && isSorted($scope.peg.C)){
                     $scope.gameStatus="WIN";
+					//fatima this variable hold the move count number after finishing the level, bader, your calculation for the score
+					//can be done here 
+					console.log($scope.movecount);
+					
                 }
             }
         }
@@ -66,7 +70,7 @@
             console.log('From Peg:'+$scope.source+" to Peg:"+$scope.destination);
 			//fatima
 			$scope.movecount=$scope.movecount+1;
-			console.log($scope.movecount+" test " +$scope.level);
+			console.log($scope.movecount+" level " +$scope.level);
             //Modify source peg
 			var diskToMove=-1;
             for(var i=$scope.peg[$scope.source].length;i>1;i--){

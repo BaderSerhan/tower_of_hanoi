@@ -56,16 +56,19 @@
         }
         
         $scope.playNextLevel=function(){
+			
+			//fatima//
 			$scope.movecount=0;
             $scope.changeLevel();
         }
         
         $scope.moveDisk=function(){
             console.log('From Peg:'+$scope.source+" to Peg:"+$scope.destination);
-            //Modify source peg
+			//fatima
 			$scope.movecount=$scope.movecount+1;
 			console.log($scope.movecount+" test " +$scope.level);
-            var diskToMove=-1;
+            //Modify source peg
+			var diskToMove=-1;
             for(var i=$scope.peg[$scope.source].length;i>1;i--){
                 if($scope.peg[$scope.source][i-1]==-1 && $scope.peg[$scope.source][i]){
                     diskToMove=$scope.peg[$scope.source][i];

@@ -48,6 +48,10 @@
             <div class="text-center">
                 <button ng-click="showCredit()">Credits</button>
             </div>
+            <br>
+            <div class="text-center">
+                <button ng-click="showHelp()">How To Play</button>
+            </div>
         </div>
 
         <div class="row" ng-show="gameStatus=='CREDIT'" ng-click='gotoHome()'>
@@ -56,7 +60,8 @@
                 <h6 class="text-center">Fatima Hamieh</h6>
                 <h6 class="text-center">Bader Serhan</h6>
                 <h6 class="text-center">Haitham Ikkawy</h6>
-                <p class="text-center">for the outcome in LET'SeGA research project which aims to assess and assign student to academic majors.</p>
+                <p class="text-center">for the outcome in LET'SeGA research project which aims to assess and assign
+                    student to academic majors.</p>
                 <br>
                 <h5 class="text-center">Project Supervisors:</h5>
                 <h6 class="text-center">Dr. Ghada ElKhayat, Alexandria University, Egypt</h6>
@@ -70,6 +75,24 @@
                 <h6 class="text-center">Souleima Gara, Ibtissem Achour</h6>
             </div>
         </div>
+
+        <div class="row" ng-show="gameStatus=='HELP'" ng-click='gotoHome()'>
+            <div ng-show="gameStatus=='HELP'" ng-click="gotoHome()" class="col-lg-12">
+                <p class="text-center">
+                    <br>The tower of Hanoi is a mathematic game or puzzle.<br>
+                    It consists of three rods and a number of disks of different sizes, which can slide onto any rod.<br>
+                    The puzzle starts with the disks in a neat stack in ascending order of size on one rod with the
+                    smallest at the top.<br>
+                    The objective of the puzzle is to move the entire stack to another rod, obeying the following simple
+                    rules:<br>
+                    <br>
+                    1. Only one disk can be moved at a time.<br>
+                    2. Each move consists of taking the upper disk from one of the stacks and placing it on top of
+                    another stack or on an empty rod.<br>
+                    3. No larger disk may be placed on top of a smaller disk.</p>
+            </div>
+        </div>
+
         <div class="row" ng-show="gameStatus=='GO'">
             <div class="col-lg-4 pegs col-md-4 col-sm-4 col-xs-4 cursor-pointer" ng-class="source=='A'?'active':''"
                 ng-click="clickPeg('A')">

@@ -106,6 +106,7 @@
                     break;
             }
             $scope.score = movesPercentage + weight;
+            console.log("Score for " + $scope.level + 'is ' + $scope.score + '%.');
             //HAITHAM//YOU MUST SEND THE SCORE PER LEVEL TO AN API HERE
         }
 

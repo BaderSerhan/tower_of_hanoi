@@ -1,5 +1,7 @@
 # Tower of Hanoi
 
+
+[Play here!](https://www.mathsisfun.com/games/towerofhanoi.html)
 Simple mini project developed using the following technology stack.
 
 * HTML5
